@@ -36,7 +36,7 @@ try:
     elif hora >= 18 and hora <= 0:
         print("Boa noite !")
     else:
-        pirnt("Não conheço esta hora.")
+        print("Não conheço esta hora.")
 except:
     print("Você não digitou um número inteiro.")
 
