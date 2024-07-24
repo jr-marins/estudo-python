@@ -3,19 +3,19 @@ informe se este numro é ímpar ou par. Caso o usuário não digite um
 númenro inteiro, informe que não é um número inteiro.'''
 
 #pedindo para o usuário inserir um valor
-# nmr_entrada = input("Digite uma valor: ")
+nmr_entrada = input("Digite uma valor: ")
 
-# try:
-#     entrada_int = int(nmr_entrada)
-#     par_impar = entrada_int % 2 == 0
-#     par_impar_txt = "ímpar"
+try:
+    entrada_int = int(nmr_entrada)
+    par_impar = entrada_int % 2 == 0
+    par_impar_txt = "ímpar"
 
-#     if par_impar:
-#         par_impar_txt = "par"
+    if par_impar:
+        par_impar_txt = "par"
 
-#     print(f"O numero {nmr_entrada} é {par_impar_txt}")
-# except:
-#     print("Você não digitou um número inteiro.")
+    print(f"O numero {nmr_entrada} é {par_impar_txt}")
+except:
+    print("Você não digitou um número inteiro.")
 
 
 '''
@@ -24,21 +24,21 @@ descrito, exiba a saudação apropriada. EX:
 Bom dia 0-11, Boa tarde 12-17 e boa noite 18-23
 '''
 
-# ent_usuario = input("Insira um horario: ")
+ent_usuario = input("Insira um horario: ")
 
-# try:
-#     hora = int(ent_usuario)
+try:
+    hora = int(ent_usuario)
 
-#     if hora >= 0 and hora <= 11:
-#         print("Bom dia !")
-#     elif hora >= 12 and hora <= 17:
-#         print("Boa tarde !")
-#     elif hora >= 18 and hora <= 0:
-#         print("Boa noite !")
-#     else:
-#         pirnt("Não conheço esta hora.")
-# except:
-#     print("Você não digitou um número inteiro.")
+    if hora >= 0 and hora <= 11:
+        print("Bom dia !")
+    elif hora >= 12 and hora <= 17:
+        print("Boa tarde !")
+    elif hora >= 18 and hora <= 0:
+        print("Boa noite !")
+    else:
+        pirnt("Não conheço esta hora.")
+except:
+    print("Você não digitou um número inteiro.")
 
 
 '''
