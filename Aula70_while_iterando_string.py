@@ -26,8 +26,8 @@ while i < len(frase):
     qnt_atual = frase.count(letra_atual)
 
     if qnt_apareceu_mais_vezes <= qnt_atual :
-        qnt_apareceu_mais_vezes = qnt_atual
-        letra_apareceu_mais_vezes = letra_atual
+        qnt_apareceu_mais_vezes = qnt_atual # guardando a qnt atual dentro da variavel
+        letra_apareceu_mais_vezes = letra_atual # guardando a letra atual se for a que mais aparece
     i += 1
 
 print(f"a letra que mais apareceu foi : {letra_apareceu_mais_vezes}, e apareceu > {qnt_apareceu_mais_vezes} vezes ")
