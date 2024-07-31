@@ -12,6 +12,7 @@ Métodos úteis em lista :
 > del = apaga um índice
 > clear = limpa a lista
 > extend = estende a lista + concatena listas
+> Copy = copia a lista criando um novo espaço na memória 
 > e etc ...
 
 '''
@@ -86,3 +87,12 @@ lista_mae = lista_b + lista_a
 print("\n", lista_mae)
 # >>  ['Eu sou', 'Developer', 'Software', 'Base de Dados', 'dados', 'código', 'Lógica de programação']
 
+# Copy = copia a lista criando um novo espaço na memória
+lista_c = lista_mae.copy() # copiou a lista e criou um novo local na memória
+# para confirmar, vou alterar a lista original e veremos que a cópia não será afetada.
+lista_mae[0] = "Eu serei" # Alterei um ítem pelo índice
+print("\n", lista_mae)
+# >>  ['Eu serei', 'Developer', 'Software', 'Base de Dados', 'dados', 'código', 'Lógica de programação']
+print("\n", lista_c)
+# >> ['Eu sou', 'Developer', 'Software', 'Base de Dados', 'dados', 'código', 'Lógica de programação']
+# A lista gerada através da cópia não foi afetada pela alteração.
