@@ -24,7 +24,10 @@ Se o resultado anterior for maior que 9:
 O primeiro digito é : 7
 
 '''
-cpf = "74682489070"
+cpf = "746.824.890-70" \
+    .replace(".", "") \
+    .replace(".", "") \
+    .replace("-", "")
 
 # Fatiando para pegar apenas os nove primeiro digitos
 nove_dg = cpf[:9]
@@ -54,11 +57,11 @@ print()
 '''
 Calcuando o segundo digito.
 '''
-cpf2 = "74682489070"
+# cpf = "74682489070"
 # cpf2 = "61300646080"
 
 # pegando os 10 primeiros digitos
-dez_dg = cpf2[:10]
+dez_dg = cpf[:10]
 
 # aumentando + 1 no contador
 contador = 11
@@ -78,4 +81,4 @@ digito2 = (resultado_dg2 * 10) % 11
 
 # usando if ternário para dar a condição que resultara no segundo digito
 digito2 = digito2 if digito2 <= 9 else "é maior"
-print(digito2)
+print("Segundo digito: ", digito2, "\n cpf: ", cpf)
