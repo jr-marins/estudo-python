@@ -4,6 +4,8 @@ Split e join com list e str
 - split = divide uma string
 
 - join = une uma string
+
+- replace = substitui caracter
 '''
 
 # split
@@ -41,3 +43,16 @@ frase_unida = "-".join(lista_palavra)
 print(frase_unida)
 # >> Tamo aí-   sempre na atividade   
 # o join uniu meus dois iteráveis e separou por um -
+
+# usanddo o replace
+meu_cpf = "471.555.555.55"
+print(meu_cpf)
+# >> 471.555.555.55
+
+usei_replace = meu_cpf \
+    .replace(".", "") \
+    .replace("-", "")
+# Estou retirando os caracteres . e - usando o método replace.
+
+print(usei_replace)
+# >> 47155555555
