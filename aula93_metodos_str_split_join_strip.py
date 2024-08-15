@@ -6,6 +6,8 @@ Split e join com list e str
 - join = une uma string
 
 - replace = substitui caracter
+
+- count = contar uma string
 '''
 
 # split
@@ -56,3 +58,8 @@ usei_replace = meu_cpf \
 
 print(usei_replace)
 # >> 47155555555
+
+# método count
+# O método count é um método para strings, ele conta a quantidade de um determinado caracter em uma string, e para isso ele recebe a variável seguido da chamada do método e um parâmetro, ou seja, o caracter que se deseja contar. 
+print("Quantas vezes o caracter 5 aparece ? : ", usei_replace.count("5"),"X")
+# >> Quantas vezes o caracter 5 aparece ? :  8 X
