@@ -11,11 +11,11 @@ não nomeados recebidos
 def multiplicar(*args):
 # recebendo e trabalhando os valores
 
-    total = 0
+    total = 1
 
     for valor in args:
 # armazenando o valor de cada multiplicação e somando com o valor guardado a cada iteração
-        total += valor * valor
+        total *= valor
 
     return total
 
@@ -23,7 +23,9 @@ def multiplicar(*args):
 resultado = multiplicar(2, 3, 4, 5)
 
 print("a soma da multipicação é ", resultado)
+print(2 * 3 * 4 * 5) # conferindo o valor
 
+print()
 
 # criando uma função que recebe uma argumento não nomeado
 def confere(numero):
