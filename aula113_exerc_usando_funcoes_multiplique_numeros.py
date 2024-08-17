@@ -28,13 +28,39 @@ print(2 * 3 * 4 * 5) # conferindo o valor
 print()
 
 # criando uma função que recebe uma argumento não nomeado
-def confere(numero):
+def confere(numero1):
 # trabalhando o valor com base em condições
 # Usei um if ternário para simplificar o código
-    par_impar = "é PAR" if numero %2 == 0 else "é ÍMPAR"
+    par_impar = "é PAR" if numero1 %2 == 0 else "é ÍMPAR"
     
-    return f"O valor > {numero}, {par_impar}"
+    return f"O valor > {numero1}, {par_impar}"
 
 qual_e = confere(5)
 
 print(qual_e)
+
+print()
+
+'''
+Outra forma de ser resolvido, tratando uma simples exceção de valor...
+
+método: Try-Except
+'''
+
+def qual_e(numero2):
+
+    try:
+        numero2 = int(numero2)
+          
+        if type(numero2) is int:
+
+            par_impar = "PAR" if numero2 %2 == 0 else "ÍMPAR"
+    
+    except ValueError:
+        return "Please, insert a int value and try again...."
+        
+    return f"O {numero2}, é {par_impar}"
+
+valor = qual_e("a")
+print(valor)
+# >> Please, insert a int value and try again....
