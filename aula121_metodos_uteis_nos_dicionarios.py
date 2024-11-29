@@ -14,23 +14,44 @@
 
 ##############################################
 
+
 pessoa = {
     'nome': 'Marcos Marins',
     'sobrenome': 'Junior',
     'idade': 26,
 }
 
+#len
+print("Quantidade de chaves: ", len(pessoa)) 
+
+
+#keys
+print("As chaves do dicioonário são: ", list(pessoa.keys()))
+
+# value
+print("Os valores da chaves: ", list(pessoa.values()))
+
+# item
+print("Suas chaves e valores: ", list(pessoa.items()))
+
 # setdefault insere um valor padrão quando a chave não existe
 pessoa.setdefault('idade', 0)
 print(pessoa['idade'])
 
-print("Quantidade de chaves: ", len(pessoa)) 
+# get
+print(pessoa.get('nome'))
 
-print("As chaves do dicioonário são: ", list(pessoa.keys()))
+# pop
+nome = pessoa.pop('nome')
 
-print("Os valores da chaves: ", list(pessoa.values()))
+# pop item
+ultima_chave = pessoa.popitem()
 
-print("Suas chaves e valores: ", list(pessoa.items()))
+# update
+pessoa.update({
+    'nome': 'novo',
+    'idade': 30,
+})
 
 print()
 
