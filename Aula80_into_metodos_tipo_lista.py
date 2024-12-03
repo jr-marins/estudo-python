@@ -96,3 +96,9 @@ print("\n", lista_mae)
 print("\n", lista_c)
 # >> ['Eu sou', 'Developer', 'Software', 'Base de Dados', 'dados', 'código', 'Lógica de programação']
 # A lista gerada através da cópia não foi afetada pela alteração.
+
+# sort
+lista.sort(key=lambda item: item) #mexe diretamente na lista
+
+# sorted
+l1 = sorted(lista, key=lambda item: item['nome']) # faz uma copia da lista original
