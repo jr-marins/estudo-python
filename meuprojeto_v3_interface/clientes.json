@@ -1,0 +1,62 @@
+[
+    {
+        "Codigo": 1,
+        "Nome": "marcos",
+        "Endereco": "rua b",
+        "Contato": "555-555",
+        "Histórico": [
+            {
+                "Descrição": "venda",
+                "Valor": 50000.0
+            },
+            {
+                "Descrição": "venda moto, modelo 150cc",
+                "Valor": 34000.0
+            }
+        ]
+    },
+    {
+        "Codigo": 2,
+        "Nome": "marins",
+        "Endereco": "rua b",
+        "Contato": "111-111",
+        "Histórico": [
+            {
+                "Descrição": "carro, modelo Celta",
+                "Valor": 55000.0
+            },
+            {
+                "Descrição": "venda, carro modelo civic",
+                "Valor": 50000.0
+            }
+        ]
+    },
+    {
+        "Codigo": 3,
+        "Nome": "junior",
+        "Endereco": "rua j",
+        "Contato": "1010-1010",
+        "Histórico": [
+            {
+                "Descrição": "venda moto, modelo 500cc",
+                "Valor": 90000.0
+            }
+        ]
+    },
+    {
+        "Codigo": 4,
+        "Nome": "maria",
+        "Endereco": "rua h ",
+        "Contato": "1010-5555",
+        "Histórico": [
+            {
+                "Descrição": "motocicleta, modelo honda 150cc",
+                "Valor": 16000.0
+            },
+            {
+                "Descrição": "motocicleta, modelo honda 150cc",
+                "Valor": 16000.0
+            }
+        ]
+    }
+]
