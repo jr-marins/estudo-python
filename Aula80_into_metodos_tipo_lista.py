@@ -102,3 +102,13 @@ lista.sort(key=lambda item: item) #mexe diretamente na lista
 
 # sorted
 l1 = sorted(lista, key=lambda item: item['nome']) # faz uma copia da lista original
+
+
+# função para unir duas listas zip
+cidade = ["salvador", "Ubatuba", "Belo Horizonte"]
+estado = ["BA", "SP", "MG", "RJ" ]
+print(list(zip(cidade, estado)))
+
+# zip longest unir duas listas
+from itertools import zip_longest
+print(list(zip_longest(cidade, estado, fillvalue= "não tem cidade")))
