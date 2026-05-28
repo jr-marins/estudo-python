@@ -1,2 +1,11 @@
+# Arquivo de teste local
 teste.py
-D:\estudo-python\aula186_criandoArquivos_contextManeger.py
+
+# Arquivos Python gerados
+__pycache__/
+*.pyc
+*.pyo
+
+# Ambientes virtuais (se houver)
+.venv/
+venv/
